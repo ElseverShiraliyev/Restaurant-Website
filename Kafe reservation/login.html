@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
+    <title>Cafe Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">Island of Dream</a></div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="booking.html">Reservasiya</a></li>
+          <li><a href="#contact">Əlaqə</a></li>
+        </ul>
+        <a href="#" class="button1">Daxil ol</a>
+
+        <div class="button2">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="navbar2 open">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="booking.html">Reservasiya</a></li>
+        <li><a href="#contact">Əlaqə</a></li>
+        <li><a href="login.html" class="button1">Daxil ol</a></li>
+      </div>
+    </header>
+
+    <main id="base2">
+      <section>
+        <div class="container">
+          <div class="user signinBx">
+            <div class="imgBx">
+              <img src="img/pexels-cottonbro-studio-4253317.jpg" alt="" />
+            </div>
+            <div class="formBx">
+              <form action="" onsubmit="return false;">
+                <h2>Daxil ol</h2>
+                <input type="text" name="" placeholder="Username" />
+                <input type="password" name="" placeholder="Parol" />
+                <input type="submit" name="" value="Daxil ol" />
+                <p class="signup">
+                  Hesabınız yoxdur ?
+                  <a href="#" onclick="toggleForm();">Qeydiyyat</a>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="user signupBx">
+            <div class="formBx">
+              <form action="" onsubmit="return false;">
+                <h2>Hesab yaradın</h2>
+                <input type="text" name="" placeholder="Username" />
+                <input type="email" name="" placeholder="Email Address" />
+                <input
+                  type="password"
+                  name=""
+                  placeholder="Parolu dxail edin"
+                />
+                <input
+                  type="password"
+                  name=""
+                  placeholder="Parolu təsdiqləyin"
+                />
+                <input type="submit" name="" value="Qeydiyyat" />
+                <p class="signup">
+                  Artıq bir hesabınız varmı?
+                  <a href="#" onclick="toggleForm();">Daxil ol</a>
+                </p>
+              </form>
+            </div>
+            <div class="imgBx">
+              <img src="/img/pexels-volkan-vardar-3887985.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="last_part">
+        <div class="row">
+          <div class="cols">
+            <h3 id="contact">Əlaqə</h3>
+            <ul>
+              <li>
+                Phone:
+                <a href="tel:+994-XX-XXX-XX-XX">+994-XX-XXX-XX-XX</a>
+              </li>
+              <li>
+                Email:
+                <a href="mailto: islandofdream@gmail.com"
+                  >islandofdream@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="cols">
+            <h3>Bizi izləyin</h3>
+            <ul class="icons">
+              <li>
+                <a href="https://"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://"
+                  ><i class="fa-brands fa-square-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://"><i class="fa-brands fa-telegram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const buttoN2 = document.querySelector(".button2");
+      const buttoN2Icon = document.querySelector(".button2 i");
+      const navBar2 = document.querySelector(".navbar2");
+
+      buttoN2.onclick = function () {
+        navBar2.classList.toggle("open");
+        const isOpen = navBar2.classList.contains("open");
+
+        buttoN2Icon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

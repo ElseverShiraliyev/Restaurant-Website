@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Courgette&family=Satisfy&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+	height: 700px;
+	background-color: #000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../img/alessio-dandi-_wD7QwuGerk-unsplash.jpg");
+}
+
+header {
+	position: relative;
+	padding: 0 2rem;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	transition: bottom .3s ease-in-out;
+}
+
+a:hover {
+	color: #ed3c57;
+}
+
+a i:hover {
+	color: #ed3c57;
+}
+
+.navbar {
+	width: 100%;
+	height: 60px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .logo a {
+	font-size: 35px;
+	font-weight: bold;
+	/* font-family: 'Charm', cursive; */
+	/* font-family: 'Courgette', cursive; */
+	font-family: 'Satisfy', cursive;
+	color: #ed3c57;
+}
+
+.navbar .links {
+	display: flex;
+	gap: 2rem;
+}
+
+.navbar .button2 {
+	color: #fff;
+	font-size: 24px;
+	display: none;
+	cursor: pointer;
+}
+
+.button1 {
+	background-color: #ed3c57;
+	color: #fff;
+	padding: 8px 16px;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.button1:hover {
+	scale: 1.05;
+	color: #ffff;
+}
+
+.button1:active {
+	scale: 0.95;
+}
+
+/* NAVBAR 2 */
+
+.navbar2 {
+	display: none;
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	width: 300px;
+	background-color: rgba(255, 255, 255, 0.1);
+	height: 0;
+	overflow: hidden;
+	backdrop-filter: blur(15px);
+	border-radius: 10px;
+	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navbar2.open {
+	height: 300px;
+}
+
+.navbar2 li {
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar2 .button1 {
+	width: 75%;
+	display: flex;
+	justify-content: center;
+}
+
+/* ESAS HISSE */
+#base1 {
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#first {
+	color: #ffff;
+}
+
+#first h1 {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+/* RESPONSIVLIK */
+
+@media (max-width:990px) {
+
+	.navbar .links,
+	.navbar .button1 {
+		display: none;
+	}
+
+	.navbar .button2 {
+		display: block;
+	}
+
+	.navbar2 {
+		display: block;
+	}
+}
+
+@media (max-width:570px) {
+	.navbar2 {
+		left: 2rem;
+		width: unset;
+	}
+}
+
+/* Footer */
+
+footer {
+	background-color: #161516;
+	color: #fff;
+	padding: 30px 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+.last_part {
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px 0 -15px;
+}
+
+.cols {
+	flex: 0 0 50%;
+	max-width: 50%;
+	text-align: center;
+}
+
+h3 {
+	margin-bottom: 15px;
+	color: #ed3c57;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+.icons li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.icons li a {
+	color: #fff;
+	font-size: 30px;
+}
+
+@media(max-width: 990px) {
+	.cols {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+@media(max-width: 570px) {
+	.cols {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}

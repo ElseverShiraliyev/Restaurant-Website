@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.reserv {
+    background: linear-gradient(#ffffff15, #ffffff15), url("banner-img.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.reservation {
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+
+.card-img {
+    background-image: url(../img/devon-janse-van-rensburg-OxShlYkaMeY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.content {
+    background: #fff;
+    height: 330px;
+    border-radius: 0 10px 10px 0;
+}
+
+.content h3 {
+    text-align: center;
+    color: #000;
+    padding: 20px 0 10px 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.form-gun {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+form select {
+    display: block;
+    width: 400px;
+    margin: 15px 0 5px 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+    color: #333;
+}
+
+form input {
+    display: block;
+    width: 190px;
+    margin: 20px 0 0 0;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+    color: #333;
+}
+
+form input[type=text],
+form input[type=number],
+form input::placeholder,
+select {
+    color: #333;
+}
+
+form input[type=submit] {
+    color: #fff;
+    background: #ed3c57;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+@media(max-width: 990px) {
+    .reservation {
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+
+    .card-img {
+        height: 570px;
+    }
+}

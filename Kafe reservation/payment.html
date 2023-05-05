@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/payment.css" />
+    <title>Cafe Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">Island of Dream</a></div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="booking.html">Reservasiya</a></li>
+          <li><a href="#contact">Əlaqə</a></li>
+        </ul>
+        <a href="login.html#user signupBx" class="button1">Daxil ol</a>
+
+        <div class="button2">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="navbar2 open">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="booking">Reservasiya</a></li>
+        <li><a href="#contact">Əlaqə</a></li>
+        <li><a href="login.html" class="button1">Daxil ol</a></li>
+      </div>
+    </header>
+    <main id="base3">
+      <section>
+        <div class="payment_base">
+          <div class="payment_check">
+            <div class="image_restaurant">
+              <div class="content"></div>
+            </div>
+            <div class="payment_form">
+              <p>Ödəniş Hissəsi</p>
+              <div class="details">
+                <div class="section">
+                  <input type="text" placeholder="Kart Nömrəsi" />
+                </div>
+                <div class="section">
+                  <input type="text" placeholder="Kart sahibinin adı" />
+                </div>
+                <div class="section last_section">
+                  <div class="item">
+                    <input type="text" placeholder="Bitmə Vaxtı" />
+                  </div>
+                  <div class="item">
+                    <input type="text" placeholder="CVV" />
+                  </div>
+                </div>
+
+                <div class="btn">
+                  <a href="#">Ödəmək</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="last_part">
+        <div class="row">
+          <div class="cols">
+            <h3 id="contact">Əlaqə</h3>
+            <ul>
+              <li>
+                Phone:
+                <a href="tel:+994-XX-XXX-XX-XX">+994-XX-XXX-XX-XX</a>
+              </li>
+              <li>
+                Email:
+                <a href="mailto: islandofdream@gmail.com"
+                  >islandofdream@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="cols">
+            <h3>Bizi izləyin</h3>
+            <ul class="icons">
+              <li>
+                <a href="https://"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://"
+                  ><i class="fa-brands fa-square-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://"><i class="fa-brands fa-telegram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const buttoN2 = document.querySelector(".button2");
+      const buttoN2Icon = document.querySelector(".button2 i");
+      const navBar2 = document.querySelector(".navbar2");
+
+      buttoN2.onclick = function () {
+        navBar2.classList.toggle("open");
+        const isOpen = navBar2.classList.contains("open");
+
+        buttoN2Icon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+</html>
